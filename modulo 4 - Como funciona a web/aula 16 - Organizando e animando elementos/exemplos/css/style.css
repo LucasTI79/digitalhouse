@@ -209,16 +209,18 @@ footer div nav ul a {
   bottom: 50%;
   width: 56px;
 
-  animation: slide 2s 1;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
 
-#social img {
-  width: 100%;
+  /* 
+    Ordem das propriedades 
+    Nome da animação - Ex: slide
+    duração - Ex: 2s | 0.5s | etc
+    quantas vezes vai se repetir - Ex: infinite | 1
+  */
+  animation: slide 2s 1;
 }
 
 @keyframes slide {
@@ -230,6 +232,12 @@ footer div nav ul a {
     left: 0px;
   }
 }
+
+#social img {
+  width: 100%;
+}
+
+
 
 
 
